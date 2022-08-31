@@ -1,0 +1,234 @@
+body{
+	background-color: #E5E5E5;
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	overflow: hidden;
+}
+.title{
+	height: 72px;
+	width: 481px;
+	font-family: Arial;
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 72px;
+	letter-spacing: 0em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0px 0px;
+}
+.products_wrapper{
+	width: 1190px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top:40px;
+}
+.product_card{
+	height: 481.75px;
+	width: 380px;
+	border-radius: 12px;
+	background-color: #fff;
+}
+img{
+	height: 213.75px;
+	width: 100%;
+	border-radius: 12px 12px 0px 0px;
+	outline: none;
+	border: none;
+}
+.tags_wrapper{
+	position: relative;
+}
+.tag_news{
+	left: 16px;
+	top: 17px;
+	position: absolute;
+	height: 24px;
+	width: 110px;
+	background: #FDCFF3;
+	border-radius: 8px;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.tag_last{
+	position: absolute;
+	width: 133px;
+	height: 24px;
+	background: #FFCF56;
+	border-radius: 8px;
+	text-align: center;
+	left: 144px;
+	top: 17px;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #2F2F2F;
+	text-transform: uppercase;
+}
+.product_title{
+	height: 36px;
+	width: 332px;
+	left: 24px;
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 36px;
+	letter-spacing: 0em;
+	text-align: left;
+	color:#2F2F2F;
+	margin: 24px 24px 16px 24px;
+}
+.product_description{
+	font-family: 'Arial';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #2F2F2F;
+	margin: 0px 0px;
+	text-overflow: clip;
+}
+.disable_btn{
+	box-sizing: border-box;
+	width: 332px;
+	height: 48px;
+	background: #4E4E4E;
+	border: 1px solid #4E4E4E;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.active_btn{
+	box-sizing: border-box;
+	width: 332px;
+	height: 48px;
+	background: #FFFFFF;
+	border: 3px solid #42940F;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #42940F;
+	text-transform: uppercase;
+}
+.product_bottom{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 24px 16px 24px;
+	height: 36%;
+}
+@media only screen and (max-width: 1200px){
+	.products_wrapper {
+		width: 100%;
+	}
+	img{
+		width: 360px;
+	}
+	.product_card{
+		width: 360px;
+	}
+	.active_btn{
+		width: 320px;
+	}
+	.disable_btn{
+		width: 320px;
+	}
+}
+@media only screen and (max-width: 541px){
+		.title{
+			height: 32px;
+			font-size: 38px;
+			line-height: 42px;
+			margin-bottom: 15px;
+		}
+		.products_wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.wrapper{
+			margin-top: 20px;
+		}
+		.product_card{
+			width: 445px;
+			margin-bottom: 20px;
+		}
+		img{
+			height: 220px;
+			width: 445px;
+		}
+		.product_bottom{
+			height: 33%;
+		}
+	}
+@media only screen and (max-width: 415px){
+	.products_wrapper {
+		height: 1300px;
+		margin-top:10px;
+	}
+	.title{
+		height: 32px;
+		font-size: 32px;
+		line-height: 32px;
+	}
+	.product_card{
+		height: 100%;
+		width: 345px;
+	}
+	img{
+		height: 180.75px;
+		width: 345px;
+	}
+	.product_title{
+		margin: 10px 24px 10px 24px;
+	}
+	.product_bottom{
+		height: 37%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.wrapper{
+		margin-top: 20px;
+	}
+	.active_btn{
+		min-height: 48px;
+		width: 303px;
+	}
+	.disable_btn{
+		height: 48px;
+		width: 303px;
+	}
+}
+
